@@ -18,7 +18,7 @@ mongoose.connect(uri, { useNewUrlParser: true, useUnifiedTopology: true })
   const exceriseRouter = require('./routes/exercise');
   app.use('/exercise', exceriseRouter);
 
-  app.use('/excercises', exceriseRouter);
+  app.use('/exercises', exercisesRouter);
   app.use('/users', usersRouter);
 
 app.listen(PORT, () => {
